@@ -1,0 +1,24 @@
+.name {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  text-align: left;
+}
+span {
+  color: #fff;
+  font-size: 0.875rem;
+}
+.input-name {
+  height: 200px;
+  border-radius: 10px;
+  background-color: #fff;
+  border: none;
+  color: #111729;
+  padding: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.input-name::placeholder {
+  color: #111729;
+  padding: 10px;
+}

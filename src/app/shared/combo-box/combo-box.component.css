@@ -1,0 +1,43 @@
+.container select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+.container select::-ms-expand {
+  display: none;
+}
+.container {
+  position: relative;
+}
+
+.container select {
+  display: inline-block;
+  width: 100%;
+  cursor: pointer;
+  padding: 7px 10px;
+  height: 60px;
+  background: #f0f0f0;
+  border-radius: 10px;
+  position: relative;
+  transition: all 0.25s ease;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.container img {
+  position: absolute;
+  right: 20px;
+  top: calc(50% - 13px);
+  display: block;
+  margin-top: 3px;
+}
+
+.container:hover img {
+  margin-top: 3px;
+}
+span {
+  color: #fff;
+  font-size: 0.875rem;
+  text-align: left;
+  display: flex;
+}

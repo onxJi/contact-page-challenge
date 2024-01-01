@@ -1,0 +1,77 @@
+* {
+  font-family: "Be Vietnam Pro", sans-serif;
+}
+
+.head {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 20px 60px;
+}
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 20px 20vw;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+h1 {
+  color: #fff;
+  font-size: 4rem;
+}
+.description {
+  color: #fff;
+  font-size: 2rem;
+  margin: 20px 0;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.2);
+  padding: 20px;
+  width: 100%;
+  border-radius: 20px;
+}
+button,
+app-text-box {
+  grid-column: span 2;
+}
+.submit {
+  background-color: #fff;
+  color: #4036a9;
+  border-radius: 10px;
+  border: none;
+  height: 60px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+@media (max-width: 767px) {
+  .form {
+    grid-template-columns: 1fr;
+  }
+  .name,
+  .email,
+  .company-size,
+  .subject,
+  app-text-box,
+  button {
+    grid-column: span 1; /* Ocupa 1 columna en lugar de 2 */
+  }
+  main {
+    margin: 10px 5vw;
+  }
+}

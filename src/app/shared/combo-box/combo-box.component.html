@@ -1,0 +1,9 @@
+<span>{{ label }}</span>
+<div class="container">
+  <select>
+    @for (item of options; track $index) {
+    <option value="{{ $index }}">{{ item }}</option>
+    }
+  </select>
+  <img src="{{ link }}" alt="icon" />
+</div>
